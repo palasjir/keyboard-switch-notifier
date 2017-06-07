@@ -8,8 +8,6 @@
 
 import Foundation
 
-import Foundation
-
 class LaunchOnStartup {
     static func itemReferencesInLoginItems() -> (existingReference: LSSharedFileListItem?, lastReference: LSSharedFileListItem?) {
         let appUrl = URL(fileURLWithPath: Bundle.main.bundlePath)
