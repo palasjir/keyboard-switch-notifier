@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026F37D31EE897120041FD09 /* InputSourceObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F37D21EE897120041FD09 /* InputSourceObserver.swift */; };
 		027B8C3E1EE46FC60092088A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027B8C3D1EE46FC60092088A /* AppDelegate.swift */; };
 		027B8C421EE46FC60092088A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027B8C411EE46FC60092088A /* Assets.xcassets */; };
 		027B8C451EE46FC60092088A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027B8C431EE46FC60092088A /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		026F37D21EE897120041FD09 /* InputSourceObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputSourceObserver.swift; sourceTree = "<group>"; };
 		027B8C3A1EE46FC60092088A /* Keyboard Switch Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Keyboard Switch Notifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		027B8C3D1EE46FC60092088A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		027B8C411EE46FC60092088A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				02A19D0D1EE883A600BD3FBF /* StatusMenuController.swift */,
 				02A19D111EE88D8000BD3FBF /* InputSource.swift */,
 				02A19D131EE890FF00BD3FBF /* KeyboardChangedNotification.swift */,
+				026F37D21EE897120041FD09 /* InputSourceObserver.swift */,
 				027B8C431EE46FC60092088A /* Main.storyboard */,
 				027B8C411EE46FC60092088A /* Assets.xcassets */,
 				027B8C4C1EE473910092088A /* Images.xcassets */,
@@ -153,6 +156,7 @@
 				02A19D141EE890FF00BD3FBF /* KeyboardChangedNotification.swift in Sources */,
 				027B8C3E1EE46FC60092088A /* AppDelegate.swift in Sources */,
 				02B601F01EE72CFB00D65D2A /* LaunchOnStartup.swift in Sources */,
+				026F37D31EE897120041FD09 /* InputSourceObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,33 +9,16 @@ import Cocoa
 import Carbon
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate, NSUserNotificationCenterDelegate {
+class AppDelegate: NSObject, NSApplicationDelegate {
     
-    let nc = NotificationCenter.default
-    let unc = NSUserNotificationCenter.default
+    var observer: InputSourceObserver? = nil
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        nc.addObserver(
-            self,
-            selector:#selector(handleNotif(sender:)),
-            name: Notification.Name("NSTextInputContextKeyboardSelectionDidChangeNotification"),
-            object: nil)
-        
-        unc.delegate = self
+        observer = InputSourceObserver()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        nc.removeObserver(self)
-    }
-    
-    func handleNotif(sender: AnyObject) {
-        let ins = InputSource()
-        let notif = KeyboardChangedNotification(name: ins.getName(), icon: ins.getIcon())
-        unc.deliver(notif)
-    }
-    
-    func userNotificationCenter(_ center: NSUserNotificationCenter, shouldPresent notification: NSUserNotification) -> Bool {
-        return true
+        observer?.remove()
     }
 
 }
