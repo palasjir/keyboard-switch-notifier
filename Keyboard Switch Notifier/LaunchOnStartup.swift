@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Cocoa
 
 class LaunchOnStartup {
     static func itemReferencesInLoginItems() -> (existingReference: LSSharedFileListItem?, lastReference: LSSharedFileListItem?) {
@@ -38,31 +39,23 @@ class LaunchOnStartup {
         return (nil, nil)
     }
     
-    static func setLaunchAtStartup(_ shouldLaunch: Bool) {
-        let itemReferences = itemReferencesInLoginItems()
-        let alreadyExists = (itemReferences.existingReference != nil)
-        let loginItemsRef = LSSharedFileListCreate(
-            nil,
-            kLSSharedFileListSessionLoginItems.takeRetainedValue(),
-            nil
-            ).takeRetainedValue() as LSSharedFileList?
-        if loginItemsRef != nil {
-            if !alreadyExists && shouldLaunch {
-                if let appUrl : CFURL = URL(fileURLWithPath: Bundle.main.bundlePath) as CFURL? {
-                    LSSharedFileListInsertItemURL(
-                        loginItemsRef,
-                        itemReferences.lastReference,
-                        nil,
-                        nil,
-                        appUrl,
-                        nil,
-                        nil
-                    )
-                }
-            } else if alreadyExists && !shouldLaunch {
-                if let itemRef = itemReferences.existingReference {
-                    LSSharedFileListItemRemove(loginItemsRef,itemRef);
-                }
+    static func toggleLaunchAtLogin(_ shouldLaunch: Bool) {
+        if toggleOpenAppLogin.selectedSegment == 0 {
+            if !SMLoginItemSetEnabled(NCConstants.launcherApplicationIdentifier as CFString, true) {
+                print("The login item was not successfull")
+                toggleOpenAppLogin.setSelected(true, forSegment: 1)
+            }
+            else {
+                UserDefaults.standard.set("true", forKey: "appLoginStart")
+            }
+        }
+        else {
+            if !SMLoginItemSetEnabled(NCConstants.launcherApplicationIdentifier as CFString, false) {
+                print("The login item was not successfull")
+                toggleOpenAppLogin.setSelected(true, forSegment: 0)
+            }
+            else {
+                UserDefaults.standard.set("false", forKey: "appLoginStart")
             }
         }
     }
