@@ -22,6 +22,7 @@ class StatusMenuController: NSObject {
         statusItem.image = icon
         statusItem.menu = statusMenu
         
+        
         if PreferenceManager.instance.startAtLogin {
             launchAtStartUpItem.state = NSOnState
         } else {
@@ -31,8 +32,7 @@ class StatusMenuController: NSObject {
     }
 
     @IBAction func launchAtStartupClicked(_ sender: Any) {
-        print("launchAtStartup")
-         launchAtStartupHandler.handle(menuItem: launchAtStartUpItem)
+        launchAtStartupHandler.handle(menuItem: launchAtStartUpItem)
     }
 
     @IBAction func quitClicked(_ sender: Any) {
