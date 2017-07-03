@@ -17,12 +17,19 @@
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Keyboard_Switch_Notifier" customModuleProvider="target"/>
                 <customObject id="QfP-bB-JUH" customClass="StatusMenuController" customModule="Keyboard_Switch_Notifier" customModuleProvider="target">
                     <connections>
-                        <outlet property="statusMenu" destination="cTD-cx-kh3" id="pTy-v3-BXP"/>
+                        <outlet property="launchAtStartUpItem" destination="Spc-Ve-Sme" id="eF2-xv-deh"/>
+                        <outlet property="statusMenu" destination="cTD-cx-kh3" id="dlr-tF-LB3"/>
                     </connections>
                 </customObject>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
                 <menu id="cTD-cx-kh3">
                     <items>
+                        <menuItem title="Launch at startup" id="Spc-Ve-Sme">
+                            <modifierMask key="keyEquivalentModifierMask"/>
+                            <connections>
+                                <action selector="launchAtStartupClicked:" target="QfP-bB-JUH" id="yi1-xn-HZe"/>
+                            </connections>
+                        </menuItem>
                         <menuItem title="Quit" identifier="quitItem" toolTip="Quit" id="6T3-OO-8e7">
                             <modifierMask key="keyEquivalentModifierMask"/>
                             <accessibility description="Quit" help="Quit" identifier="Quit"/>

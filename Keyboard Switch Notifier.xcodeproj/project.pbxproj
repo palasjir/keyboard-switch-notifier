@@ -7,33 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026324161F0AE871008ECE3E /* PreferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026324151F0AE871008ECE3E /* PreferenceManager.swift */; };
 		026F37D31EE897120041FD09 /* InputSourceObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026F37D21EE897120041FD09 /* InputSourceObserver.swift */; };
 		027B8C3E1EE46FC60092088A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027B8C3D1EE46FC60092088A /* AppDelegate.swift */; };
 		027B8C421EE46FC60092088A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 027B8C411EE46FC60092088A /* Assets.xcassets */; };
 		027B8C451EE46FC60092088A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 027B8C431EE46FC60092088A /* Main.storyboard */; };
+		028F695E1EF55751009BE472 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 028F695D1EF55751009BE472 /* AppDelegate.m */; };
+		028F69611EF55751009BE472 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 028F69601EF55751009BE472 /* main.m */; };
+		028F69641EF55751009BE472 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 028F69631EF55751009BE472 /* ViewController.m */; };
+		028F69661EF55751009BE472 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 028F69651EF55751009BE472 /* Assets.xcassets */; };
+		028F69691EF55751009BE472 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 028F69671EF55751009BE472 /* Main.storyboard */; };
 		02A19D0E1EE883A600BD3FBF /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A19D0D1EE883A600BD3FBF /* StatusMenuController.swift */; };
 		02A19D121EE88D8000BD3FBF /* InputSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A19D111EE88D8000BD3FBF /* InputSource.swift */; };
 		02A19D141EE890FF00BD3FBF /* KeyboardChangedNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A19D131EE890FF00BD3FBF /* KeyboardChangedNotification.swift */; };
 		02A8A85E1EE87EC00016535D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 027B8C461EE46FC60092088A /* Info.plist */; };
-		02B601F01EE72CFB00D65D2A /* LaunchOnStartup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B601EF1EE72CFB00D65D2A /* LaunchOnStartup.swift */; };
+		02E3DE211F0AD9F5003317F4 /* KeyboardSwitchNotifierHelper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 028F695A1EF55751009BE472 /* KeyboardSwitchNotifierHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		02E3DE231F0ADE7A003317F4 /* LaunchAtStartupHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E3DE221F0ADE7A003317F4 /* LaunchAtStartupHandler.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		02E3DE201F0AD9E3003317F4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LoginItems;
+			dstSubfolderSpec = 1;
+			files = (
+				02E3DE211F0AD9F5003317F4 /* KeyboardSwitchNotifierHelper.app in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		026324151F0AE871008ECE3E /* PreferenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceManager.swift; sourceTree = "<group>"; };
 		026F37D21EE897120041FD09 /* InputSourceObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputSourceObserver.swift; sourceTree = "<group>"; };
 		027B8C3A1EE46FC60092088A /* Keyboard Switch Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Keyboard Switch Notifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		027B8C3D1EE46FC60092088A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		027B8C411EE46FC60092088A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		027B8C441EE46FC60092088A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		027B8C461EE46FC60092088A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		028F695A1EF55751009BE472 /* KeyboardSwitchNotifierHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardSwitchNotifierHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		028F695C1EF55751009BE472 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		028F695D1EF55751009BE472 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		028F69601EF55751009BE472 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		028F69621EF55751009BE472 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		028F69631EF55751009BE472 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		028F69651EF55751009BE472 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		028F69681EF55751009BE472 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		028F696A1EF55751009BE472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02A19D0D1EE883A600BD3FBF /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		02A19D101EE8857100BD3FBF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		02A19D111EE88D8000BD3FBF /* InputSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputSource.swift; sourceTree = "<group>"; };
 		02A19D131EE890FF00BD3FBF /* KeyboardChangedNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardChangedNotification.swift; sourceTree = "<group>"; };
-		02B601EF1EE72CFB00D65D2A /* LaunchOnStartup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchOnStartup.swift; sourceTree = "<group>"; };
+		02E3DE221F0ADE7A003317F4 /* LaunchAtStartupHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchAtStartupHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		027B8C371EE46FC60092088A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		028F69571EF55751009BE472 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				027B8C3C1EE46FC60092088A /* Keyboard Switch Notifier */,
+				028F695B1EF55751009BE472 /* KeyboardSwitchNotifierHelper */,
 				027B8C3B1EE46FC60092088A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				027B8C3A1EE46FC60092088A /* Keyboard Switch Notifier.app */,
+				028F695A1EF55751009BE472 /* KeyboardSwitchNotifierHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,16 +102,40 @@
 			isa = PBXGroup;
 			children = (
 				027B8C3D1EE46FC60092088A /* AppDelegate.swift */,
-				02B601EF1EE72CFB00D65D2A /* LaunchOnStartup.swift */,
 				02A19D0D1EE883A600BD3FBF /* StatusMenuController.swift */,
 				02A19D111EE88D8000BD3FBF /* InputSource.swift */,
 				02A19D131EE890FF00BD3FBF /* KeyboardChangedNotification.swift */,
 				026F37D21EE897120041FD09 /* InputSourceObserver.swift */,
+				026324151F0AE871008ECE3E /* PreferenceManager.swift */,
+				02E3DE221F0ADE7A003317F4 /* LaunchAtStartupHandler.swift */,
 				027B8C431EE46FC60092088A /* Main.storyboard */,
 				027B8C411EE46FC60092088A /* Assets.xcassets */,
 				027B8C461EE46FC60092088A /* Info.plist */,
 			);
 			path = "Keyboard Switch Notifier";
+			sourceTree = "<group>";
+		};
+		028F695B1EF55751009BE472 /* KeyboardSwitchNotifierHelper */ = {
+			isa = PBXGroup;
+			children = (
+				028F695C1EF55751009BE472 /* AppDelegate.h */,
+				028F695D1EF55751009BE472 /* AppDelegate.m */,
+				028F69621EF55751009BE472 /* ViewController.h */,
+				028F69631EF55751009BE472 /* ViewController.m */,
+				028F69651EF55751009BE472 /* Assets.xcassets */,
+				028F69671EF55751009BE472 /* Main.storyboard */,
+				028F696A1EF55751009BE472 /* Info.plist */,
+				028F695F1EF55751009BE472 /* Supporting Files */,
+			);
+			path = KeyboardSwitchNotifierHelper;
+			sourceTree = "<group>";
+		};
+		028F695F1EF55751009BE472 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				028F69601EF55751009BE472 /* main.m */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +148,7 @@
 				027B8C361EE46FC60092088A /* Sources */,
 				027B8C371EE46FC60092088A /* Frameworks */,
 				027B8C381EE46FC60092088A /* Resources */,
+				02E3DE201F0AD9E3003317F4 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -93,6 +157,23 @@
 			name = "Keyboard Switch Notifier";
 			productName = "Keyboard Switch Notifier";
 			productReference = 027B8C3A1EE46FC60092088A /* Keyboard Switch Notifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+		028F69591EF55751009BE472 /* KeyboardSwitchNotifierHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 028F696D1EF55751009BE472 /* Build configuration list for PBXNativeTarget "KeyboardSwitchNotifierHelper" */;
+			buildPhases = (
+				028F69561EF55751009BE472 /* Sources */,
+				028F69571EF55751009BE472 /* Frameworks */,
+				028F69581EF55751009BE472 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyboardSwitchNotifierHelper;
+			productName = KeyboardSwitchNotifierHelper;
+			productReference = 028F695A1EF55751009BE472 /* KeyboardSwitchNotifierHelper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,6 +187,10 @@
 				ORGANIZATIONNAME = "Jiří Palas";
 				TargetAttributes = {
 					027B8C391EE46FC60092088A = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					028F69591EF55751009BE472 = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -125,6 +210,7 @@
 			projectRoot = "";
 			targets = (
 				027B8C391EE46FC60092088A /* Keyboard Switch Notifier */,
+				028F69591EF55751009BE472 /* KeyboardSwitchNotifierHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -140,6 +226,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		028F69581EF55751009BE472 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				028F69661EF55751009BE472 /* Assets.xcassets in Resources */,
+				028F69691EF55751009BE472 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -148,11 +243,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				02A19D0E1EE883A600BD3FBF /* StatusMenuController.swift in Sources */,
+				026324161F0AE871008ECE3E /* PreferenceManager.swift in Sources */,
 				02A19D121EE88D8000BD3FBF /* InputSource.swift in Sources */,
 				02A19D141EE890FF00BD3FBF /* KeyboardChangedNotification.swift in Sources */,
 				027B8C3E1EE46FC60092088A /* AppDelegate.swift in Sources */,
-				02B601F01EE72CFB00D65D2A /* LaunchOnStartup.swift in Sources */,
+				02E3DE231F0ADE7A003317F4 /* LaunchAtStartupHandler.swift in Sources */,
 				026F37D31EE897120041FD09 /* InputSourceObserver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		028F69561EF55751009BE472 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				028F69641EF55751009BE472 /* ViewController.m in Sources */,
+				028F69611EF55751009BE472 /* main.m in Sources */,
+				028F695E1EF55751009BE472 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +270,14 @@
 			children = (
 				027B8C441EE46FC60092088A /* Base */,
 				02A19D101EE8857100BD3FBF /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		028F69671EF55751009BE472 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				028F69681EF55751009BE472 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -289,6 +403,32 @@
 			};
 			name = Release;
 		};
+		028F696B1EF55751009BE472 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeyboardSwitchNotifierHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.palasjiri.KeyboardSwitchNotifierHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		028F696C1EF55751009BE472 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeyboardSwitchNotifierHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.palasjiri.KeyboardSwitchNotifierHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -306,6 +446,15 @@
 			buildConfigurations = (
 				027B8C4A1EE46FC60092088A /* Debug */,
 				027B8C4B1EE46FC60092088A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		028F696D1EF55751009BE472 /* Build configuration list for PBXNativeTarget "KeyboardSwitchNotifierHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				028F696B1EF55751009BE472 /* Debug */,
+				028F696C1EF55751009BE472 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
