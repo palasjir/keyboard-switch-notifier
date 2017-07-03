@@ -41,7 +41,7 @@
 /* Begin PBXFileReference section */
 		026324151F0AE871008ECE3E /* PreferenceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferenceManager.swift; sourceTree = "<group>"; };
 		026F37D21EE897120041FD09 /* InputSourceObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputSourceObserver.swift; sourceTree = "<group>"; };
-		027B8C3A1EE46FC60092088A /* Keyboard Switch Notifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Keyboard Switch Notifier.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		027B8C3A1EE46FC60092088A /* KeyboardSwitchNotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyboardSwitchNotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		027B8C3D1EE46FC60092088A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		027B8C411EE46FC60092088A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		027B8C441EE46FC60092088A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		027B8C311EE46FC60092088A = {
 			isa = PBXGroup;
 			children = (
-				027B8C3C1EE46FC60092088A /* Keyboard Switch Notifier */,
+				027B8C3C1EE46FC60092088A /* KeyboardSwitchNotifier */,
 				028F695B1EF55751009BE472 /* KeyboardSwitchNotifierHelper */,
 				027B8C3B1EE46FC60092088A /* Products */,
 			);
@@ -92,13 +92,13 @@
 		027B8C3B1EE46FC60092088A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				027B8C3A1EE46FC60092088A /* Keyboard Switch Notifier.app */,
+				027B8C3A1EE46FC60092088A /* KeyboardSwitchNotifier.app */,
 				028F695A1EF55751009BE472 /* KeyboardSwitchNotifierHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		027B8C3C1EE46FC60092088A /* Keyboard Switch Notifier */ = {
+		027B8C3C1EE46FC60092088A /* KeyboardSwitchNotifier */ = {
 			isa = PBXGroup;
 			children = (
 				027B8C3D1EE46FC60092088A /* AppDelegate.swift */,
@@ -112,6 +112,7 @@
 				027B8C411EE46FC60092088A /* Assets.xcassets */,
 				027B8C461EE46FC60092088A /* Info.plist */,
 			);
+			name = KeyboardSwitchNotifier;
 			path = "Keyboard Switch Notifier";
 			sourceTree = "<group>";
 		};
@@ -141,9 +142,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		027B8C391EE46FC60092088A /* Keyboard Switch Notifier */ = {
+		027B8C391EE46FC60092088A /* KeyboardSwitchNotifier */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 027B8C491EE46FC60092088A /* Build configuration list for PBXNativeTarget "Keyboard Switch Notifier" */;
+			buildConfigurationList = 027B8C491EE46FC60092088A /* Build configuration list for PBXNativeTarget "KeyboardSwitchNotifier" */;
 			buildPhases = (
 				027B8C361EE46FC60092088A /* Sources */,
 				027B8C371EE46FC60092088A /* Frameworks */,
@@ -154,9 +155,9 @@
 			);
 			dependencies = (
 			);
-			name = "Keyboard Switch Notifier";
+			name = KeyboardSwitchNotifier;
 			productName = "Keyboard Switch Notifier";
-			productReference = 027B8C3A1EE46FC60092088A /* Keyboard Switch Notifier.app */;
+			productReference = 027B8C3A1EE46FC60092088A /* KeyboardSwitchNotifier.app */;
 			productType = "com.apple.product-type.application";
 		};
 		028F69591EF55751009BE472 /* KeyboardSwitchNotifierHelper */ = {
@@ -196,7 +197,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 027B8C351EE46FC60092088A /* Build configuration list for PBXProject "Keyboard Switch Notifier" */;
+			buildConfigurationList = 027B8C351EE46FC60092088A /* Build configuration list for PBXProject "KeyboardSwitchNotifier" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -209,7 +210,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				027B8C391EE46FC60092088A /* Keyboard Switch Notifier */,
+				027B8C391EE46FC60092088A /* KeyboardSwitchNotifier */,
 				028F69591EF55751009BE472 /* KeyboardSwitchNotifierHelper */,
 			);
 		};
@@ -432,7 +433,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		027B8C351EE46FC60092088A /* Build configuration list for PBXProject "Keyboard Switch Notifier" */ = {
+		027B8C351EE46FC60092088A /* Build configuration list for PBXProject "KeyboardSwitchNotifier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				027B8C471EE46FC60092088A /* Debug */,
@@ -441,7 +442,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		027B8C491EE46FC60092088A /* Build configuration list for PBXNativeTarget "Keyboard Switch Notifier" */ = {
+		027B8C491EE46FC60092088A /* Build configuration list for PBXNativeTarget "KeyboardSwitchNotifier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				027B8C4A1EE46FC60092088A /* Debug */,
